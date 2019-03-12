@@ -1,5 +1,9 @@
 # Quiz Component
 
+![Caption for the picture.](./screenshots/1.png)
+
+![Caption for the picture.](./screenshots/2.png)
+
 ## Project setup
 ```
 yarn install
