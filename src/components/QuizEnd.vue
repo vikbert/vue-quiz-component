@@ -20,9 +20,7 @@
       };
     },
     props: ['resetQuestionIndexHandler'],
-    components: {
-      QuizMessage,
-    },
+    components: {QuizMessage},
     methods: {
       handleClick() {
         this.is_quiz_reset = true;
@@ -33,7 +31,3 @@
     },
   };
 </script>
-
-<style scoped>
-
-</style>

@@ -8,7 +8,6 @@
 <script>
   import QuizQuestion from './QuizQuestion';
   import QuizEnd from './QuizEnd';
-  import QuizMessage from './QuizMessage';
   import json from './quiz_data.json';
 
   export default {
@@ -20,11 +19,7 @@
         quiz_length: json.quiz_questions.length,
       };
     },
-    components: {
-      QuizQuestion,
-      QuizEnd,
-      QuizMessage,
-    },
+    components: {QuizQuestion, QuizEnd},
     methods: {
       resetQuestionIndex() {
         this.quiz_position = 1;
@@ -39,6 +34,3 @@
     },
   };
 </script>
-
-<style scoped>
-</style>
