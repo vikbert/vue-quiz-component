@@ -7,10 +7,10 @@
 <script>
   export default {
     name: "QuizButton",
-    props: ['button_text'],
+    props: {button_text: String},
     methods: {
       handleClickAnswerOption() {
-        this.$parent.handleClickAnswerOption();
+        this.$parent.handleClickAnswerOption(this.button_text);
       },
     },
   };

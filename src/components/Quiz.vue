@@ -6,9 +6,10 @@
 </template>
 
 <script>
-  import QuizQuestion from './QuizQuestion.vue'
-  import QuizEnd from './QuizEnd.vue'
-  import json from './quiz_data.json'
+  import QuizQuestion from './QuizQuestion';
+  import QuizEnd from './QuizEnd';
+  import QuizMessage from './QuizMessage';
+  import json from './quiz_data.json';
 
   export default {
     name: "Quiz",
@@ -16,22 +17,24 @@
       return {
         quiz_data: json,
         quiz_position: 1,
-        quiz_length: json.quiz_questions.length
-      }
+        quiz_length: json.quiz_questions.length,
+      };
     },
     components: {
       QuizQuestion,
-      QuizEnd
+      QuizEnd,
+      QuizMessage,
     },
     methods: {
       resetQuestionIndex() {
-        this.quiz_position = 1
+        this.quiz_position = 1;
+        this.quiz_reset = true;
       },
       incrementQuestionIndex() {
-        this.quiz_position += 1
+        this.quiz_position += 1;
       },
       isQuizEnd() {
-        return (this.quiz_position - 1) === this.quiz_length
+        return (this.quiz_position - 1) === this.quiz_length;
       },
     },
   };
