@@ -1,4 +1,4 @@
-# foobar
+# Quiz Component
 
 ## Project setup
 ```

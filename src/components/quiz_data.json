@@ -1,0 +1,16 @@
+{
+    "quiz_questions": [
+        {
+            "id": 1,
+            "instruction_text": "How many continents are there on Planet Earth?",
+            "answer_options": ["5 continents", "6 continents", "7 continents", "8 continents"],
+            "answer": "7"
+        },
+        {
+            "id": 2,
+            "instruction_text": "What's your favorite number?",
+            "answer_options": ["189", "251", "387", "444"],
+            "answer": "4"
+        }
+    ]
+}
